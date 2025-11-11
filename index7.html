@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tráfego | Neon Glass</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffffff, #eaf6ff, #f5fbff);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      color: #0f0f0f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 128, 255, 0.15);
+      padding: 40px 25px;
+      text-align: center;
+      max-width: 440px;
+      width: 100%;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00bfff;
+      box-shadow: 0 0 25px #00e0ff80;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #0077ff;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-budget {
+      background: linear-gradient(90deg, #0077ff, #00eaff);
+      box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+    }
+
+    .btn-budget:hover {
+      box-shadow: 0 0 30px rgba(0, 200, 255, 0.7);
+    }
+
+    .btn-consult {
+      background: linear-gradient(90deg, #00ff8c, #25D366);
+      box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-consult:hover {
+      box-shadow: 0 0 30px rgba(37, 211, 102, 0.7);
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 45px 25px;
+      }
+
+      .avatar {
+        width: 150px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .btn {
+        padding: 18px;
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pravatar.cc/400?img=47" alt="Avatar" class="avatar">
+    <h1>Marcos Vieira</h1>
+    <h2>Gestor de Tráfego & Performance Digital</h2>
+    <p>Ajudo empresas a venderem mais com campanhas inteligentes, criativos otimizados e estratégias de tráfego baseadas em dados.</p>
+
+    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-budget">
+      <i data-lucide="zap"></i> Solicitar Orçamento
+    </a>
+
+    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-consult">
+      <i data-lucide="cpu"></i> Agendar Consultoria
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Todos os direitos reservados. Criado para mentes que pensam em conversão.
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tráfego | Link da Bio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0077ff;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #111;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #0077ff;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn-budget {
+      background: #0077ff;
+    }
+
+    .btn-budget:hover {
+      background: #005fcc;
+    }
+
+    .btn-consult {
+      background: #25D366;
+    }
+
+    .btn-consult:hover {
+      background: #1eb255;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pravatar.cc/300" alt="Avatar" class="avatar">
+    <h1>Lucas Almeida</h1>
+    <h2>Gestor de Tráfego Pago</h2>
+    <p>Aumento suas vendas com estratégias inteligentes e campanhas otimizadas nas principais plataformas.</p>
+
+    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-budget">💰 Solicitar Orçamento</a>
+    <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-consult">📞 Agendar Consultoria</a>
+  </div>
+
+  <footer>
+    © 2025 Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Efeito simples ao carregar
+    document.addEventListener("DOMContentLoaded", () => {
+      const card = document.querySelector(".card");
+      card.style.opacity = 0;
+      card.style.transform = "translateY(20px)";
+      setTimeout(() => {
+        card.style.transition = "all 0.8s ease";
+        card.style.opacity = 1;
+        card.style.transform = "translateY(0)";
+      }, 100);
+    });
+  </script>
+</body>
+</html>
