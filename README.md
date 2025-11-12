@@ -36,15 +36,3 @@ O arquivo principal `index.html` funciona como **página de vitrine** para todos
 - Transições fluidas e estética moderna
 
 ---
-
-## 🗂️ Estrutura do Repositório
-/linkbio/
-│
-├── index.html # Página inicial com links
-├── modelo1-basico.html # Modelo 1
-├── modelo2-icones.html # Modelo 2
-├── modelo3-espacado.html # Modelo 3
-├── modelo4-escuro.html # Modelo 4
-├── modelo5-futurista.html # Modelo 5
-├── modelo6-claro-futurista.html # Modelo 6
-└── modelo7-neon-glass.html # Modelo 7
